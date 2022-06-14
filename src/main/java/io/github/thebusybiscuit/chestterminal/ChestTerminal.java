@@ -28,6 +28,7 @@ public class ChestTerminal extends JavaPlugin implements Listener, SlimefunAddon
 	
 	@Override
 	public void onEnable() {
+	        getLogger().info("CT终端已启用");
 		Config cfg = new Config(this);
 		
 		// Setting up bStats
@@ -147,6 +148,6 @@ public class ChestTerminal extends JavaPlugin implements Listener, SlimefunAddon
 
 	@Override
 	public String getBugTrackerURL() {
-		return "https://github.com/TheBusyBiscuit/ChestTerminal/issues";
+		return "https://github.com/mcchampions/ChestTerminal/issues";
 	}
 }
