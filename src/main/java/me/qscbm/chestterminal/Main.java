@@ -32,16 +32,6 @@ public class Main extends JavaPlugin implements Listener, SlimefunAddon {
 		
 		// Setting up bStats
 		new Metrics(this, 15478);
-
-		// Setting up the Auto-Updater
-		PluginUpdater<PrefixedVersion> updater = null;
-
-		if (getDescription().getVersion().startsWith("DEV - ")) {
-			// If we are using a development build, we want to switch to our custom 
-			updater = new GitHubBuildsUpdater(this, getFile(), "mcchampions/ChestTerminal/master");
-		}
-
-		if (updater != null && cfg.getBoolean("options.auto-update")) updater.start();
 		
 		SlimefunItemStack milkyQuartz = new SlimefunItemStack("MILKY_QUARTZ", Material.QUARTZ, "&f钟乳石英");
 		SlimefunItemStack ctPanel = new SlimefunItemStack("CT_PANEL", "7a44ff3a5f49c69cab676bad8d98a063fa78cfa61916fdef3e267557fec18283", "&3CT控制部件", "&7基础制作物品");
