@@ -6,7 +6,6 @@ import org.bukkit.NamespacedKey;
 import org.bukkit.event.Listener;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.plugin.java.JavaPlugin;
-
 import io.github.thebusybiscuit.chestterminal.items.AccessTerminal;
 import io.github.thebusybiscuit.chestterminal.items.ExportBus;
 import io.github.thebusybiscuit.chestterminal.items.ImportBus;
