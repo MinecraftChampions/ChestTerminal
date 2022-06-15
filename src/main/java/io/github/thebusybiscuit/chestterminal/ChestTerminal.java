@@ -32,14 +32,14 @@ public class ChestTerminal extends JavaPlugin implements Listener, SlimefunAddon
 		Config cfg = new Config(this);
 		
 		// Setting up bStats
-		new Metrics(this, 5503);
+		new Metrics(this, 15478);
 
 		// Setting up the Auto-Updater
 		PluginUpdater<PrefixedVersion> updater = null;
 
 		if (getDescription().getVersion().startsWith("DEV - ")) {
 			// If we are using a development build, we want to switch to our custom 
-			updater = new GitHubBuildsUpdater(this, getFile(), "TheBusyBiscuit/ChestTerminal/master");
+			updater = new GitHubBuildsUpdater(this, getFile(), "mcchampions/ChestTerminal/master");
 		}
 
 		if (updater != null && cfg.getBoolean("options.auto-update")) updater.start();
