@@ -6,7 +6,6 @@ on:
 # 注意一下，这个是分支名 可能是main
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
