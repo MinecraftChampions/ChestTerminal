@@ -1,6 +1,6 @@
-name: ChestTerminal
+name: ChestTerminal Remake
 version: ${project.version}
-author: TheBusyBiscuit
+authors: [ TheBusyBiscuit, scbm187531, aoad ]
 website: https://github.com/TheBusyBiscuit/ChestTerminal
 
 api-version: 1.14
