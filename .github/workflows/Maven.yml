@@ -32,5 +32,5 @@ jobs:
         if: success()
         with:
           name: ChestTerminal zh-CN
-          path: target/ChestTerminal 45 zh-CN.jar
+          path: target/ChestTerminal v45 zh-CN.jar
 # 注意要和打包出来的一致
