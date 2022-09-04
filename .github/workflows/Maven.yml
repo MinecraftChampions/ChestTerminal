@@ -22,7 +22,6 @@ jobs:
         with:
           java-version: 1.8
 # 1.8 = Java8 可以直接写
-# 一些拓展的版本可能是11 或16
       - name: submodules-init
         uses: snickerbockers/submodules-init@v4
       - name: Build with Maven
