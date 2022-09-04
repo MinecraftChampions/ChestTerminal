@@ -7,7 +7,7 @@ import org.bukkit.World.Environment;
 import org.bukkit.block.Biome;
 import org.bukkit.inventory.ItemStack;
 
-import me.qscbm.chestterminal.ChestTerminal;
+import me.qscbm.chestterminal.Main;
 import io.github.thebusybiscuit.slimefun4.api.geo.GEOResource;
 
 public class MilkyQuartz implements GEOResource {
@@ -15,7 +15,7 @@ public class MilkyQuartz implements GEOResource {
     private final NamespacedKey key;
     private final ItemStack item;
 
-    public MilkyQuartz(ChestTerminal plugin, ItemStack item) {
+    public MilkyQuartz(Main plugin, ItemStack item) {
         this.key = new NamespacedKey(plugin, "milky_quartz");
         this.item = item;
     }
