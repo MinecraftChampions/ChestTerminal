@@ -1,4 +1,4 @@
-package io.github.thebusybiscuit.chestterminal.items;
+package me.qscbm.chestterminal.items;
 
 import java.util.concurrent.ThreadLocalRandom;
 
