@@ -1,35 +1,25 @@
 package me.qscbm.chestterminal;
 
-import org.bstats.bukkit.Metrics;
-import org.bukkit.Material;
-import org.bukkit.NamespacedKey;
-import org.bukkit.event.Listener;
-import org.bukkit.inventory.ItemStack;
-import org.bukkit.plugin.java.JavaPlugin;
-import me.qscbm.chestterminal.items.AccessTerminal;
-import me.qscbm.chestterminal.items.ExportBus;
-import me.qscbm.chestterminal.items.ImportBus;
-import me.qscbm.chestterminal.items.MilkyQuartz;
-import me.qscbm.chestterminal.items.WirelessTerminal;
 import io.github.thebusybiscuit.slimefun4.api.SlimefunAddon;
 import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
 import io.github.thebusybiscuit.slimefun4.implementation.SlimefunItems;
-import io.github.thebusybiscuit.slimefun4.libraries.dough.config.Config;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
-import io.github.thebusybiscuit.slimefun4.libraries.dough.updater.GitHubBuildsUpdater;
-import io.github.thebusybiscuit.slimefun4.libraries.dough.updater.PluginUpdater;
-import io.github.thebusybiscuit.slimefun4.libraries.dough.versions.PrefixedVersion;
+import me.qscbm.chestterminal.items.*;
+import org.bstats.bukkit.Metrics;
+import org.bukkit.Material;
+import org.bukkit.NamespacedKey;
+import org.bukkit.event.Listener;
+import org.bukkit.inventory.ItemStack;
+import org.bukkit.plugin.java.JavaPlugin;
 
 public class Main extends JavaPlugin implements Listener, SlimefunAddon {
 	
 	@Override
 	public void onEnable() {
 	        getLogger().info("CT终端已启用");
-		Config cfg = new Config(this);
-		
 		// Setting up bStats
 		new Metrics(this, 15478);
 		

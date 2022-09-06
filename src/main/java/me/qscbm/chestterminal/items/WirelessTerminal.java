@@ -1,6 +1,7 @@
 package me.qscbm.chestterminal.items;
 
 import java.util.List;
+import java.util.Objects;
 
 import org.bukkit.Bukkit;
 import org.bukkit.World;
@@ -34,9 +35,9 @@ public abstract class WirelessTerminal extends SimpleSlimefunItem<ItemUseHandler
             e.getInteractEvent().setCancelled(true);
             ItemStack stack = e.getItem();
             ItemMeta im = stack.getItemMeta();
-            List<String> lore = im.getLore();
+            List<String> lore = Objects.requireNonNull(im).getLore();
 
-            if (lore.isEmpty()) {
+            if (Objects.requireNonNull(lore).isEmpty()) {
                 return;
             }
 
