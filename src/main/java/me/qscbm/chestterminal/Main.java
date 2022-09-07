@@ -19,8 +19,7 @@ public class Main extends JavaPlugin implements Listener, SlimefunAddon {
 	
 	@Override
 	public void onEnable() {
-	        getLogger().info("CT终端已启用");
-		// Setting up bStats
+        getLogger().info("CT终端已启用");
 		new Metrics(this, 15478);
 		
 		SlimefunItemStack milkyQuartz = new SlimefunItemStack("MILKY_QUARTZ", Material.QUARTZ, "&f钟乳石英");
@@ -35,7 +34,7 @@ public class Main extends JavaPlugin implements Listener, SlimefunAddon {
 		SlimefunItemStack wirelessTerminal128 = new SlimefunItemStack("CT_WIRELESS_ACCESS_TERMINAL_128", Material.ITEM_FRAME, "&3CT无线连接终端 &b(128)", "&8\u21E8 &7连接到: &c无", "&8\u21E8 &7范围: &e128个方块", "&c&o&8\u21E8 &e\u26A1 &70 / 50 J", "", "&7如果将此物品连接到特定CT终端", "&7那么将可以远程&3访问&7CT网络内任何物品", "", "&7&e手持物品右键&7打开CT连接终端以连接");
 		SlimefunItemStack wirelessTerminalTransdimensional = new SlimefunItemStack("CT_WIRELESS_ACCESS_TERMINAL_TRANSDIMENSIONAL", Material.ITEM_FRAME, "&3CT无线连接终端 &b(跨维度)", "&8\u21E8 &7连接到: &c无", "&8\u21E8 &7范围: &e无限", "&c&o&8\u21E8 &e\u26A1 &70 / 50 J", "", "&7如果将此物品连接到特定CT终端", "&7那么将可以远程&3访问&7CT网络内任何物品", "", "&7&e手持物品右键&7打开CT连接终端以连接");
 		
-		ItemGroup itemGroup = new ItemGroup(new NamespacedKey(this, "chest_terminal"), new CustomItemStack(chestTerminal, "&5Chest Terminal(CT货运)", "", "&a> 单击打开"));
+		ItemGroup itemGroup = new ItemGroup(new NamespacedKey(this, "chest_terminal"), new CustomItemStack(chestTerminal, "&5CT货运", "", "&a> 单击打开"));
 		
 		new SlimefunItem(itemGroup, milkyQuartz, RecipeType.GEO_MINER,
 		new ItemStack[0])
